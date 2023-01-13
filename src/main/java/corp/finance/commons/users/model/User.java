@@ -2,13 +2,12 @@ package corp.finance.commons.users.model;
 
 
 import corp.finance.commons.Audit;
-import lombok.*;
-import lombok.experimental.SuperBuilder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
-@Builder
-@SuperBuilder
-@AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @ToString
