@@ -1,14 +1,15 @@
 package corp.finance.commons.collateral.service;
 
+
 import corp.finance.commons.collateral.model.Collateral;
 
 import java.util.List;
 
-public interface CollateralManagement {
+public interface CollateralService {
 
-    List<Collateral> getAllCollateral();
+    List<Collateral> getAllCollaterals();
 
-    List<Collateral> getCollateral(List<String> collateralIds);
+    List<Collateral> getCollaterals(List<String> collateralIds);
 
     Collateral getCollateral(String collateralId);
 }

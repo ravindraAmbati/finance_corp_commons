@@ -2,19 +2,26 @@ package corp.finance.commons.users.model;
 
 
 import corp.finance.commons.Audit;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+import java.util.List;
+
+@Builder
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @ToString
-public class User extends Audit {
+@Component
+public class User implements Serializable {
 
     private String userId;
     private String userName;
     private String userType;
+    private List<String> productIds;
+    private List<String> collateralIds;
     private Contact contact;
+    private Audit audit;
 }

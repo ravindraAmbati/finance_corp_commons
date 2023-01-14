@@ -1,10 +1,11 @@
 package corp.finance.commons.products.service;
 
+
 import corp.finance.commons.products.model.Product;
 
 import java.util.List;
 
-public interface ProductManagement {
+public interface ProductService {
 
     List<Product> getAllProducts();
 
