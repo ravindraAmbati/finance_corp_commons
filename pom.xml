@@ -57,11 +57,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>ravindraAmbati</name>
-			<url>https://github.com/ravindraAmbati/finance_corp_commons</url>
-		</repository>
-	</distributionManagement>
 </project>
